@@ -1,0 +1,1 @@
+.\maven3\bin\mvn test -DvpsId=Pre27 -DthreadCount=30 -DtestSuite=src/test/resources/viewYoutube.xml

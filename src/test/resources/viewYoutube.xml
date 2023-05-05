@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="test-suite" data-provider-thread-count="3">
+    <listeners>
+        <listener class-name="listener.TestListener"></listener>
+        <listener class-name="listener.AnnotationTransformer"></listener>
+    </listeners>
+    <test name="View youtube">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="retryCount" value="0"/>
+        <parameter name="rerunFailed" value="false"/>
+        <parameter name="enableActivity" value="false"/>
+        <parameter name="threadCount" value="1"/>
+        <classes>
+            <class name="tests.ViewYoutube"/>
+        </classes>
+    </test>
+</suite>
